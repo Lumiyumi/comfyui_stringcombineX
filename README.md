@@ -10,6 +10,4 @@ class StringCombine10(StringCombineX):
 and add their values to the NODE_CLASS_MAPPINGS and NODE_DISPLAY_NAME_MAPPINGS.
 
 
-left an example commented out. 
-class StringCombine5(StringCombineX):
-    INPUT_COUNT = 5
+left an example commented out at the bottom.
