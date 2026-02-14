@@ -3,13 +3,11 @@ class StringCombineX:
 
     @classmethod
     def INPUT_TYPES(cls):
-        DEF_ATTR_IN = {"default": "", "forceInput": True}
-        DEF_ATTR_SFX = {"default": ""}
         optional_inputs = {}
-        optional_inputs["prefix"] = ("STRING", {**DEF_ATTR_SFX})
+        optional_inputs["prefix"] = ("STRING", {"default": ""})
         for i in range(1, cls.INPUT_COUNT + 1):
-            optional_inputs[f"input{i}"] = ("STRING", {**DEF_ATTR_IN})
-            optional_inputs[f"suffix{i}"] = ("STRING", {**DEF_ATTR_SFX})
+            optional_inputs[f"input{i}"] = ("STRING", {"default": "", "forceInput": True})
+            optional_inputs[f"suffix{i}"] = ("STRING", {"default": ""})
 
         return {
             "required": {},
@@ -57,4 +55,5 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
 #    "StringCombine5": "String Combine 5",    
     "StringCombine10": "String Combine 10",
+
 }
