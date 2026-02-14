@@ -11,5 +11,5 @@ and add their values to the NODE_CLASS_MAPPINGS and NODE_DISPLAY_NAME_MAPPINGS.
 
 
 left an example commented out. 
-#class StringCombine5(StringCombineX):
-#    INPUT_COUNT = 5
+class StringCombine5(StringCombineX):
+    INPUT_COUNT = 5
